@@ -66,10 +66,12 @@ def questions_answers():
 
     if user_answer == right_answer:
         print(f"Good job! That was the correct answer.")
+        return 1
 
 
     elif user_answer != right_answer:
         print(f"You answered incorrectly")
+        return 0
 
 
 questions_answers()
